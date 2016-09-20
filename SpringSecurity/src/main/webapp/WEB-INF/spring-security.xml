@@ -31,7 +31,7 @@
   access-decision-manager-ref="accessDecisionManager"
   xmlns="http://www.springframework.org/schema/security">
   <anonymous enabled="false" />
-  <intercept-url pattern="/api/**" access="ROLE_APP" />
+  <intercept-url pattern="/api/**" access="ROLE_ADMIN" />
   <custom-filter ref="resourceServerFilter" before="PRE_AUTH_FILTER" />
   <access-denied-handler ref="oauthAccessDeniedHandler" />
  </http>
@@ -133,11 +133,11 @@
   <!-- client -->
   <oauth:client client-id="restapp"
    authorized-grant-types="authorization_code,client_credentials"
-   authorities="ROLE_APP" scope="read,write,trust" secret="secret" />
+   authorities="ROLE_ADMIN" scope="read,write,trust" secret="secret" />
 
   <oauth:client client-id="restapp"
    authorized-grant-types="password,authorization_code,refresh_token,implicit"
-   secret="restapp" authorities="ROLE_APP" />
+   secret="restapp" authorities="ROLE_ADMIN" />
 
  </oauth:client-details-service>
 

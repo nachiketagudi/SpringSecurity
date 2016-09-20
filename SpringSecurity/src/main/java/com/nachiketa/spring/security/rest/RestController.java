@@ -19,7 +19,7 @@ public class RestController {
 
  @RequestMapping(value = "/", method = RequestMethod.GET)
  @ResponseBody
- public List list() {
+ public List<?> list() {
   return dataService.getUserList();
 
  }

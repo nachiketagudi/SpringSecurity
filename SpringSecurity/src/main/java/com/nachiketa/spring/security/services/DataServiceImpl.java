@@ -18,7 +18,7 @@ public class DataServiceImpl implements DataService  {
 	  // preparing user list with few hard coded values
 	  List<User> userList = new ArrayList<User>();
 	  
-	  userList.add(new User(1, "nachiketa", "nachiketa@caliberassurance.com", "9642423254"));
+	  userList.add(new User(1, "nachiketa", "nachiketagudi@gmail.com", "9642423254"));
 	  
 	  
 	  return userList;
