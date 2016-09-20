@@ -3,17 +3,17 @@ package com.nachiketa.spring.security.model;
 import org.springframework.stereotype.Component;
 
 @Component
-public class User {
+public class Employee {
 	 private int id;
 	 private String name;
 	 private String email;
 	 private String phone;
 
-	 public User() {
+	 public Employee() {
 	 
 	 }
 
-	 public User(int id, String name, String email, String phone) {
+	 public Employee(int id, String name, String email, String phone) {
 	  super();
 	  this.id = id;
 	  this.name = name;
